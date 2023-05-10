@@ -46,6 +46,8 @@ def create_container():
     ok = os.system(f"docker run -d -p {port}:80 {docker_image}")
     if ok == 1:
         return "Error starting docker", 500
+    
+    # TODO: get docker hash and return that hash
 
     return f"http://{CONTAINER_HOST}:{port}"
 
