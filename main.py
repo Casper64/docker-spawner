@@ -89,14 +89,14 @@ RewriteRule ^ - [L,R=404]"""
     with open(PROXY_CONFIG, 'w') as f:
         f.write(new_file)
 
-    # try:
-    #     subprocess.check_call('sudo systemctl reload apache2')
-    # except subprocess.CalledProcessError:
-    #     print('apache failed :(')
-    #     with open(PROXY_CONFIG, 'w') as f:
-    #         f.write(old_config)
+    try:
+        subprocess.check_call('sudo systemctl reload apache2', shell=True)
+    except subprocess.CalledProcessError:
+        print('apache failed :(')
+        with open(PROXY_CONFIG, 'w') as f:
+            f.write(old_config)
 
-    #     subprocess.check_call('sudo systemctl reload apache2')
+        subprocess.check_call('sudo systemctl reload apache2')
 
 def gen_random_hex_string(size):
     return ''.join(random.choices('0123456789abcdef', k=size))
