@@ -1,0 +1,11 @@
+[Unit]
+Description=Spawn docker containers on demand.
+
+[Service]
+User=root
+WorkingDirectory=/path/to/docker-spawner
+ExecStart=/path/to/docker-spawner/venv/bin/flask --app main.py run --port=YOUR_PORT
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
