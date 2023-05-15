@@ -202,7 +202,7 @@ RewriteRule ^ - [L,R=404]"""
                 f.write(old_config)
 
             # old_config should not fail
-            subprocess.check_call('sudo systemctl reload apache2')
+            subprocess.check_call('sudo systemctl reload apache2', shell=True)
 
 
 def gen_random_hex_string(size):
@@ -219,7 +219,7 @@ def get_all_containers():
     command = f'{prefix}docker ps -a -f "name={settings.CONTAINER_PREFIX}"'
 
     try:
-        output = subprocess.check_output(command)
+        output = subprocess.check_output(command, shell=True)
     except subprocess.CalledProcessError:
         return
 
