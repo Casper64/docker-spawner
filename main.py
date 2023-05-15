@@ -145,9 +145,3 @@ def get_all_running_containers():
         container_map[hex] = port
 
     print(container_map)
-
-
-if __name__ == '__main__':
-    get_all_running_containers()
-    update_proxy_config()
-    app.run()

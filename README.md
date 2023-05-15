@@ -30,6 +30,8 @@ python -m venv venv
 pip install -r requirements.txt
 ```
 
+You can edit the configuration in `app/main.py`.
+
 ### Port ranges
 
 `PORT_START` and `MAX_CONTAINERS` will set the range of ports where docker containers
