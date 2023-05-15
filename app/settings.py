@@ -26,6 +26,4 @@ WITH_USERS = True
 # Add your container images here
 CONTAINER_IMAGES: dict[str, str] = {
     # 'some_id': 'container_name'
-    '1': 'challenge1',
-    '2': 'challenge2'
 }
