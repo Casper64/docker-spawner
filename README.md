@@ -57,7 +57,7 @@ Change the default values in `docker-spawner.service`.
 Copy `docker-spawner.service` to your `systemd` folder.
 
 ```bash
-sudo cp docker-spawner.service /etc/systemd/service
+sudo cp docker-spawner.service /etc/systemd/system/
 ```
 
 Reload the systemd daemon to load the service.
