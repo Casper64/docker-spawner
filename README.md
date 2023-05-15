@@ -91,11 +91,11 @@ Required form data:
 
 -   `container_hex`: the hex identifer of the docker container. You can obtain it from `/spawn`
 
-### Get hex from a container by user id
+### Get hex from a container by user id `GET /get_container_hex`
 
 > **Note**: this route is only enabled when [users support](#users-support) is enabled
 
-required form data
+required query parameters
 
 -   `user_id`: the users id
 
