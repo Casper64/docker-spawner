@@ -14,7 +14,7 @@ demand via an http-endpoint and mount them to a dynamic subdomain.
 Clone the repository and navigate to the folder
 
 ```bash
-git clone https://github.com/Casper64/docker-container-spawner docker-spawner
+git clone https://github.com/Casper64/docker-spawner
 cd docker-spawner
 ```
 
