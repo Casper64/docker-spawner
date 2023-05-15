@@ -32,7 +32,7 @@ pip install -r requirements.txt
 
 ## Dynamic subdomain
 
-In order to use Docker Spawner you need to have a [wildcard DNS record][^1] for your domain.
+In order to use Docker Spawner you need to have a [wildcard DNS record](^1) for your domain.
 
 In `apache.conf` is a default configuration for Apache which you can extend. Make sure to always
 include the `Include` rule and update the default values.
