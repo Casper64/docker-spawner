@@ -43,7 +43,7 @@ Replace `YOUR_PORT` and run the app with flask from your virtual environment or
 [run it as a service](#systemd-service).
 
 ```bash
-flask --app app run --port=YOUR_PORT
+flask --app app run --port=YOUR_PORT --host=0.0.0.0
 ```
 
 ## Systemd Service
