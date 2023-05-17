@@ -4,7 +4,7 @@ Description=Spawn docker containers on demand.
 [Service]
 User=root
 WorkingDirectory=/path/to/docker-spawner
-ExecStart=/path/to/docker-spawner/venv/bin/flask --app app run --port=YOUR_PORT
+ExecStart=/path/to/docker-spawner/venv/bin/flask --app app run --port=YOUR_PORT --host=0.0.0.0
 Restart=always
 
 [Install]
